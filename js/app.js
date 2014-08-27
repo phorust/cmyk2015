@@ -1,0 +1,1 @@
+var cmyk = angular.module('cmyk', ['ngRoute', 'ngTouch', 'ngAnimate']);
