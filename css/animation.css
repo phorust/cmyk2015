@@ -1,4 +1,4 @@
-@-webkit-keyframe fadeOut {
+/*@-webkit-keyframe fadeOut {
   0% {
     opacity: 1;
   }
@@ -48,4 +48,24 @@
   -o-animation: fadeOut 0.7s both linear;
   animation: fadeOut 0.7s both linear;
   z-index: 0;
+}*/
+
+.animation {
+  -webkit-transition: 1s;
+}
+
+.animation.ng-enter {
+  opacity: 0;
+}
+
+.animation.ng-leave {
+  opacity: 1;
+}
+
+.animation.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+.animation.ng-leave.ng-leave-active {
+  opacity: 0;
 }
