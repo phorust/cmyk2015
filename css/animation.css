@@ -7,15 +7,6 @@
   }
 }
 
-@-moz-keyframe fadeOut {
-  0% {
-    opacity: 1;
-  }
-  90%, 100% {
-    opacity: 0;
-  }
-}
-
 @keyframe fadeOut {
   0% {
     opacity: 1;
@@ -26,15 +17,6 @@
 }
 
 @-webkit-keyframe fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframe fadeIn {
   0% {
     opacity: 0;
   }
@@ -61,38 +43,6 @@
 }
 
 .ng-leave {
-  -webkit-animation: fadeOut 0.7s both linear;
-  -moz-animation: fadeOut 0.7s both linear;
-  -o-animation: fadeOut 0.7s both linear;
-  animation: fadeOut 0.7s both linear;
-  z-index: 0;
-}
-
-.ng-enter .page-home {
-  -webkit-animation: fadeIn 0.7s both linear;
-  -moz-animation: fadeIn 0.7s both linear;
-  -o-animation: fadeIn 0.7s both linear;
-  animation: fadeIn 0.7s both linear;
-  z-index: 0;
-}
-
-.ng-leave .page-home {
-  -webkit-animation: fadeOut 0.7s both linear;
-  -moz-animation: fadeOut 0.7s both linear;
-  -o-animation: fadeOut 0.7s both linear;
-  animation: fadeOut 0.7s both linear;
-  z-index: 0;
-}
-
-.ng-enter .page-about {
-  -webkit-animation: fadeIn 0.7s both linear;
-  -moz-animation: fadeIn 0.7s both linear;
-  -o-animation: fadeIn 0.7s both linear;
-  animation: fadeIn 0.7s both linear;
-  z-index: 0;
-}
-
-.ng-leave .page-about {
   -webkit-animation: fadeOut 0.7s both linear;
   -moz-animation: fadeOut 0.7s both linear;
   -o-animation: fadeOut 0.7s both linear;
