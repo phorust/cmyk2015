@@ -4,4 +4,6 @@ cmyk.controller('MainController', function($scope, $location) {
     console.log(url);
     console.log('emily is testing stuff');
   }
+
+  $scope.pageClass = 'page-home';
 });

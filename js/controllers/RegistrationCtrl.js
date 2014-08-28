@@ -1,3 +1,3 @@
 cmyk.controller('RegistrationController', function($scope) {
-  console.log('RegistrationController');
+  $scope.pageClass = 'page-registration';
 });
