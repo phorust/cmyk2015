@@ -1,55 +1,3 @@
-/*@-webkit-keyframe fadeOut {
-  0% {
-    opacity: 1;
-  }
-  90%, 100% {
-    opacity: 0;
-  }
-}
-
-@keyframe fadeOut {
-  0% {
-    opacity: 1;
-  }
-  90%, 100% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframe fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframe fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.ng-enter {
-  -webkit-animation: fadeIn 0.7s 0.3s both linear;
-  -moz-animation: fadeIn 0.7s 0.3s both linear;
-  -o-animation: fadeIn 0.7s 0.3s both linear;
-  animation: fadeIn 0.7s 0.3s both linear;
-  z-index: 888888;
-}
-
-.ng-leave {
-  -webkit-animation: fadeOut 0.7s both linear;
-  -moz-animation: fadeOut 0.7s both linear;
-  -o-animation: fadeOut 0.7s both linear;
-  animation: fadeOut 0.7s both linear;
-  z-index: 0;
-}*/
-
 .animation {
   -webkit-transition: 0.8s;
   -moz-transition: 0.8s;
@@ -92,6 +40,7 @@
 }
 .page.page-home.animation.ng-leave.ng-leave-active {
   opacity: 0;
+  display: none;
 }
 
 .page.page-about.animation.ng-enter {
