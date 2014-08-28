@@ -38,6 +38,53 @@ html, body {
   background-color: #2d3236;
 }
 
+.closePage {
+  z-index: 99999999;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  width: 30px;
+  height: 30px;
+  -webkit-transition: border 0.25s;
+  -moz-transition: border 0.25s;
+  -o-transition: border 0.25s;
+  transition: border 0.25s;
+}
+.closePage .close {
+  z-index: 99999999;
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background: #ffffff;
+  top: 12px;
+  left: 3px;
+  -webkit-transition: background 0.25s;
+  -moz-transition: background 0.25s;
+  -o-transition: background 0.25s;
+  transition: background 0.25s;
+}
+.closePage .close.close1 {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.closePage .close.close2 {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.closePage:hover {
+  border: 2px solid #cccccc;
+}
+.closePage:hover .close {
+  background: #cccccc;
+}
+
 .circle-wrapper.disabled {
   opacity: 0.3;
   cursor: default;
