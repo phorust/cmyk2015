@@ -1,6 +1,9 @@
 .about-wrapper {
-  height: 100%;
-  width: 100%;
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  left: 50px;
+  right: 50px;
   background-color: #00a8d4;
   color: #ffffff;
   padding: 20px;
