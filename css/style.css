@@ -1,6 +1,88 @@
 html, body {
+  height: 100%;
+  width: 100%;
   padding: 0px;
   margin: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.page {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.page.page-home {
+  background-color: #ffffff;
+}
+.page.page-about {
+  background-color: #00a8d4;
+}
+.page.page-registration {
+  background-color: #d43e7d;
+}
+.page.page-schedule {
+  background-color: #f2cd31;
+}
+.page.page-submission {
+  background-color: #2d3236;
+}
+
+.closePage {
+  z-index: 99999999;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  width: 30px;
+  height: 30px;
+  -webkit-transition: border 0.25s;
+  -moz-transition: border 0.25s;
+  -o-transition: border 0.25s;
+  transition: border 0.25s;
+}
+.closePage .close {
+  z-index: 99999999;
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background: #ffffff;
+  top: 12px;
+  left: 3px;
+  -webkit-transition: background 0.25s;
+  -moz-transition: background 0.25s;
+  -o-transition: background 0.25s;
+  transition: background 0.25s;
+}
+.closePage .close.close1 {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.closePage .close.close2 {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.closePage:hover {
+  border: 2px solid #cccccc;
+}
+.closePage:hover .close {
+  background: #cccccc;
 }
 
 .circle-wrapper.disabled {

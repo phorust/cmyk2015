@@ -1,10 +1,14 @@
 <html>
   <head>
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/about.css">
     <link rel="stylesheet" type="text/css" href="css/registration.css">
     <link rel="stylesheet" type="text/css" href="css/schedule.css">
     <link rel="stylesheet" type="text/css" href="css/submission.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 
@@ -21,5 +25,7 @@
     <script src="./js/controllers/ScheduleCtrl.js"></script>
     <script src="./js/controllers/SubmissionCtrl.js"></script>
   </head>
-  <body data-ng-app="cmyk" data-ng-view autoscroll="true"></body>
+  <body data-ng-app="cmyk" autoscroll="true">
+    <div class="page {{ pageClass }} animation" data-ng-view></div>
+  </body>
 </html>

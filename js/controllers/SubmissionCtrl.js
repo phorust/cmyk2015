@@ -1,3 +1,7 @@
-cmyk.controller('SubmissionController', function($scope) {
-  console.log('SubmissionController');
+cmyk.controller('SubmissionController', function($scope, $location) {
+  $scope.pageClass = 'page-submission';
+
+  $scope.closePage = function() {
+    $location.path('/');
+  };
 });
