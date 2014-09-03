@@ -26,23 +26,23 @@ html, body {
   background-color: #ffffff;
 }
 .page.page-about {
-  background-color: #00a8d4;
+  background-color: #ffffff;
 }
 .page.page-registration {
-  background-color: #d43e7d;
+  background-color: #ffffff;
 }
 .page.page-schedule {
-  background-color: #f2cd31;
+  background-color: #ffffff;
 }
 .page.page-submission {
-  background-color: #2d3236;
+  background-color: #ffffff;
 }
 
 .closePage {
   z-index: 99999999;
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 30px;
+  right: 30px;
   background: none;
   border-radius: 50%;
   border: 2px solid #ffffff;

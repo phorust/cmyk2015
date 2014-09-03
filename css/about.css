@@ -1,9 +1,77 @@
-.about-wrapper {
-  position: absolute;
-  top: 50px;
-  bottom: 50px;
-  left: 50px;
-  right: 50px;
+.about-header {
+  position: relative;
+  width: 250px;
+  height: 100%;
+  padding: 100px 10px;
   background-color: #00a8d4;
   color: #ffffff;
+  float: left;
+
+}
+
+.about-wrapper {
+float: right;
+  position: relative;
+  width: 80%;
+  height: 100%;
+  padding: 30px 40px ;
+  background-color: #fff;
+  color: #777e82;
+}
+
+.logistics {
+	margin-top: 40px;
+	margin-left: 6px;
+}
+
+
+ul {
+  font-family: "Lato";
+  font-weight: 100;
+  font-size: 25px;
+  letter-spacing: 5px;
+  list-style-type: none;
+  padding: 0px;
+}
+
+li {
+	margin: 2px 15px;
+	display: inline-block;
+}
+
+.prim-text {
+	padding-top: 15px;
+	position: relative;
+}
+
+.image {
+	position: relative;
+	float: left;
+}
+
+.fav {
+	height: 40px;
+	width: 40px;
+	vertical-align: middle;
+}
+
+.prim {
+	height: 200px;
+	width: 200px;
+	vertical-align: middle;
+	margin-right: 30px;
+}
+
+.log-text {
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+h1 {
+	font-family: "Lato";
+	font-size: 35px;
+	letter-spacing: 10px;
+	font-weight: 100;
+	text-align: center;
+	padding-bottom: 20px;
 }
