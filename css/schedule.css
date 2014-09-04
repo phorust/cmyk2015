@@ -10,6 +10,21 @@
 .closePage.schedule:hover .close {
   background: #ffffff;
 }
+@media (min-width: 768px) {
+  .closePage.schedule {
+    right: 30px;
+    background-color: #f2cd31;
+  }
+  .closePage.schedule .close {
+    background-color: #ffffff;
+  }
+  .closePage.schedule:hover {
+    background-color: #ffffff;
+  }
+  .closePage.schedule:hover .close {
+    background-color: #f2cd31;
+  }
+}
 .arrow.schedule {
   background-color: #ffffff;
 }

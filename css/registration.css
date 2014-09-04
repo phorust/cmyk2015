@@ -10,6 +10,21 @@
 .closePage.registration:hover .close {
   background: #ffffff;
 }
+@media (min-width: 768px) {
+  .closePage.registration {
+    right: 30px;
+    background-color: #d43e7d;
+  }
+  .closePage.registration .close {
+    background-color: #ffffff;
+  }
+  .closePage.registration:hover {
+    background-color: #ffffff;
+  }
+  .closePage.registration:hover .close {
+    background-color: #d43e7d;
+  }
+}
 .arrow.registration {
   background-color: #ffffff;
 }

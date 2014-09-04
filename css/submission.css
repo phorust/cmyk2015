@@ -11,6 +11,21 @@
 .closePage.submission:hover .close {
   background-color: #ffffff;
 }
+@media (min-width: 768px) {
+  .closePage.submission {
+    right: 30px;
+    background-color: #2d3236;
+  }
+  .closePage.submission .close {
+    background-color: #ffffff;
+  }
+  .closePage.submission:hover {
+    background-color: #ffffff;
+  }
+  .closePage.submission:hover .close {
+    background-color: #2d3236;
+  }
+}
 .arrow.submission {
   right: 75px;
   background-color: #ffffff;

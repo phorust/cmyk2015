@@ -2,7 +2,7 @@
   right: 65px;
   background-color: #ffffff;
 }
-.closePage.registration .close {
+.closePage.about .close {
   background-color: #00a8d4;
 }
 .closePage.about:hover {
@@ -10,6 +10,21 @@
 }
 .closePage.about:hover .close {
   background-color: #ffffff;
+}
+@media (min-width: 768px) {
+  .closePage.about {
+    right: 30px;
+    background-color: #00a8d4;
+  }
+  .closePage.about .close {
+    background-color: #ffffff;
+  }
+  .closePage.about:hover {
+    background-color: #ffffff;
+  }
+  .closePage.about:hover .close {
+    background-color: #00a8d4;
+  }
 }
 .arrow.about {
   right: 15px;
