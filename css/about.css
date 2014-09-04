@@ -1,8 +1,8 @@
-.about-header {
-  position: absolute;
-  width: 250px;
-  height: 100%;
-  padding: 100px 10px;
+.closePage.about {
+  right: 65px;
+  background-color: #ffffff;
+}
+.closePage.about .close {
   background-color: #00a8d4;
 }
 .closePage.about:hover {
@@ -40,14 +40,16 @@
   background-color: #ffffff;
 }
 
-.about-wrapper {
-  position: absolute;
-  left: 250px;
-  width: 80%;
-  height: 100%;
-  padding: 30px 40px ;
-  background-color: #fff;
-  color: #777e82;
+.sidebar-header.about {
+  background-color: #00a8d4;
+}
+.header-wrapper {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-75%);
+  -moz-transform: translateY(-75%);
+  -o-transform: translateY(-75%);
+  transform: translateY(-75%);
 }
 .sidebar-header .header-wrapper h1 {
   font-family: "Lato";
