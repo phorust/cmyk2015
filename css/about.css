@@ -1,5 +1,5 @@
 .about-header {
-  position: relative;
+  position: absolute;
   width: 250px;
   height: 100%;
   padding: 100px 10px;
@@ -10,8 +10,9 @@
 }
 
 .about-wrapper {
-float: right;
-  position: relative;
+  position: absolute;
+/*  float: left;*/
+  left: 250px;
   width: 80%;
   height: 100%;
   padding: 30px 40px ;
