@@ -41,12 +41,12 @@ html, body {
 .closePage {
   z-index: 99999999;
   position: fixed;
-  top: 30px;
-  right: 30px;
+  top: 20px;
+  right: 20px;
   background: #00a8d4;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  height: 34px;
   cursor: pointer;
   -webkit-transition: border 0.25s;
   -moz-transition: border 0.25s;
@@ -60,11 +60,11 @@ html, body {
 .closePage .close {
   z-index: 99999999;
   position: absolute;
-  width: 22px;
+  width: 20px;
   height: 4px;
   background: #ffffff;
-  top: 18px;
-  left: 9px;
+  top: 15px;
+  left: 7px;
   -webkit-transition: background 0.25s;
   -moz-transition: background 0.25s;
   -o-transition: background 0.25s;
@@ -87,6 +87,15 @@ html, body {
 }
 .closePage:hover .close {
   background: #00a8d4;
+}
+
+.sidebar-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  color: #ffffff;
 }
 
 .circle-wrapper.disabled {

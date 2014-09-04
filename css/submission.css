@@ -1,8 +1,13 @@
-.submission-wrapper {
-  position: relative;
-  padding: 20px;
-  width: 100%;
-  height: 100%;
-  background: none;
-  color: #ffffff;
+.closePage.submission {
+  background-color: #2d3236;
+}
+.closePage.submission:hover {
+  background-color: #ffffff;
+}
+.closePage.submission:hover .close {
+  background: #2d3236;
+}
+
+.sidebar-header.submission {
+  background-color: #2d3236;
 }
