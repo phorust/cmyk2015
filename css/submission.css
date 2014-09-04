@@ -1,11 +1,28 @@
 .closePage.submission {
+  right: 15px;
+  background-color: #ffffff;
+}
+.closePage.submission .close {
   background-color: #2d3236;
 }
 .closePage.submission:hover {
-  background-color: #ffffff;
+  background-color: #2d3236;
 }
 .closePage.submission:hover .close {
-  background: #2d3236;
+  background-color: #ffffff;
+}
+.arrow.submission {
+  right: 75px;
+  background-color: #ffffff;
+}
+.arrow.submission .point {
+  background-color: #2d3236;
+}
+.arrow.submission:hover {
+  background-color: #2d3236;
+}
+.arrow.submission:hover .point {
+  background-color: #ffffff;
 }
 
 .sidebar-header.submission {

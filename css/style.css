@@ -41,12 +41,12 @@ html, body {
 .closePage {
   z-index: 99999999;
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 30px;
+  right: 30px;
   background: #00a8d4;
   border-radius: 50%;
-  width: 34px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   -webkit-transition: border 0.25s;
   -moz-transition: border 0.25s;
@@ -60,11 +60,11 @@ html, body {
 .closePage .close {
   z-index: 99999999;
   position: absolute;
-  width: 20px;
+  width: 24px;
   height: 4px;
   background: #ffffff;
-  top: 15px;
-  left: 7px;
+  top: 18px;
+  left: 8px;
   -webkit-transition: background 0.25s;
   -moz-transition: background 0.25s;
   -o-transition: background 0.25s;
@@ -87,6 +87,101 @@ html, body {
 }
 .closePage:hover .close {
   background: #00a8d4;
+}
+@media (max-width: 767px) {
+  .closePage {
+    position: absolute;
+    top: 290px;
+    right: 65px;
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px #888888;
+  }
+  .closePage .close {
+    width: 30px;
+    height: 5px;
+    top: 22px;
+    left: 10px;
+    background: #00a8d4;
+  }
+  .closePage:hover {
+    background: #00a8d4;
+  }
+  .closePage:hover {
+    background: #ffffff;
+  }
+}
+.arrow {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 295px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 0px 3px #888888;
+  cursor: pointer;
+  -webkit-transition: border 0.25s;
+  -moz-transition: border 0.25s;
+  -o-transition: border 0.25s;
+  transition: border 0.25s;
+  -webkit-transition: background 0.25s;
+  -moz-transition: background 0.25s;
+  -o-transition: background 0.25s;
+  transition: background 0.25s;
+}
+.arrow.arrow-back {
+  right: 125px;
+}
+.arrow.arrow-fwd {
+  right: 15px;
+}
+.arrow .point {
+  position: absolute;
+  height: 4px;
+  width: 16px;
+  top: 14px;
+  background: #00a8d4;
+  -webkit-transition: background 0.25s;
+  -moz-transition: background 0.25s;
+  -o-transition: background 0.25s;
+  transition: background 0.25s;
+}
+.arrow.arrow-fwd .point1 {
+  left: 14px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.arrow.arrow-fwd .point2 {
+  top: 23px;
+  left: 14px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.arrow.arrow-back .point1 {
+  left: 10px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.arrow.arrow-back .point2 {
+  top: 23px;
+  left: 10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.arrow:hover {
+  background: #00a8d4;
+}
+.arrow:hover .point {
+  background: #ffffff;
 }
 
 .sidebar-header {

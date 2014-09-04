@@ -1,11 +1,26 @@
 .closePage.registration {
+  background-color: #ffffff;
+}
+.closePage.registration .close {
   background-color: #d43e7d;
 }
 .closePage.registration:hover {
-  background-color: #ffffff;
+  background-color: #d43e7d;
 }
 .closePage.registration:hover .close {
-  background: #d43e7d;
+  background: #ffffff;
+}
+.arrow.registration {
+  background-color: #ffffff;
+}
+.arrow.registration .point {
+  background-color: #d43e7d;
+}
+.arrow.registration:hover {
+  background-color: #d43e7d;
+}
+.arrow.registration:hover .point {
+  background-color: #ffffff;
 }
 
 .sidebar-header.registration {

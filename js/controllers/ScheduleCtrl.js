@@ -4,4 +4,7 @@ cmyk.controller('ScheduleController', function($scope, $location) {
   $scope.closePage = function() {
     $location.path('/');
   };
+  $scope.place = function(url) {
+    $location.path("/" + url);
+  }
 });

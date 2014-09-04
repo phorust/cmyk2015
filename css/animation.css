@@ -43,102 +43,158 @@
   display: none;
 }
 
-.page.page-about.animation.ng-enter {
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-.page.page-about.animation.ng-leave {
-  -webkit-transform: translateX(0%);
-  -moz-transform: translateX(0%);
-  -o-transform: translateX(0%);
-  transform: translateX(0%);
-}
-.page.page-about.animation.ng-enter.ng-enter-active {
-  -webkit-transform: translateX(0%);
-  -moz-transform: translateX(0%);
-  -o-transform: translateX(0%);
-  transform: translateX(0%);
-}
-.page.page-about.animation.ng-leave.ng-leave-active {
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
-  transform: translateX(-100%);
+@media (min-width: 768px) {
+  .page.page-about.animation.ng-enter {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  .page.page-about.animation.ng-leave {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  .page.page-about.animation.ng-enter.ng-enter-active {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  .page.page-about.animation.ng-leave.ng-leave-active {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .page.page-registration.animation.ng-enter {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  .page.page-registration.animation.ng-leave {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  .page.page-registration.animation.ng-enter.ng-enter-active {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  .page.page-registration.animation.ng-leave.ng-leave-active {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  .page.page-schedule.animation.ng-enter {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  .page.page-schedule.animation.ng-leave {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  .page.page-schedule.animation.ng-enter.ng-enter-active {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  .page.page-schedule.animation.ng-leave.ng-leave-active {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+
+  .page.page-submission.animation.ng-enter {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  .page.page-submission.animation.ng-leave {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  .page.page-submission.animation.ng-enter.ng-enter-active {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  .page.page-submission.animation.ng-leave.ng-leave-active {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+  }
 }
 
-.page.page-registration.animation.ng-enter {
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  transform: translateY(-100%);
-}
-.page.page-registration.animation.ng-leave {
-  -webkit-transform: translateY(0%);
-  -moz-transform: translateY(0%);
-  -o-transform: translateY(0%);
-  transform: translateY(0%);
-}
-.page.page-registration.animation.ng-enter.ng-enter-active {
-  -webkit-transform: translateY(0%);
-  -moz-transform: translateY(0%);
-  -o-transform: translateY(0%);
-  transform: translateY(0%);
-}
-.page.page-registration.animation.ng-leave.ng-leave-active {
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  transform: translateY(-100%);
-}
+@media (max-width: 767px) {
+  .page.page-about.animation.ng-enter {
+    opacity: 0;
+  }
+  .page.page-about.animation.ng-enter .sidebar-header.about {
+    background-color: #ffffff;
+  }
+  .page.page-about.animation.ng-leave {
+    opacity: 0;
+  }
+  .page.page-about.animation.ng-leave .sidebar-header.about {
+    background-color: #00a8d4;
+  }
+  .page.page-about.animation.ng-enter.ng-enter-active {
+    opacity: 1;
+  }
+  .page.page-about.animation.ng-enter.ng-enter-active .sidebar-header.about {
+    background-color: #00a8d4;
+  }
+  .page.page-about.animation.ng-leave.ng-leave-active {
+    opacity: 0;
+  }
+  .page.page-about.animation.ng-leave.ng-leave-active .sidebar-header.about {
+    background-color: #ffffff;
+  }
 
-.page.page-schedule.animation.ng-enter {
-  -webkit-transform: translateY(100%);
-  -moz-transform: translateY(100%);
-  -o-transform: translateY(100%);
-  transform: translateY(100%);
-}
-.page.page-schedule.animation.ng-leave {
-  -webkit-transform: translateY(0%);
-  -moz-transform: translateY(0%);
-  -o-transform: translateY(0%);
-  transform: translateY(0%);
-}
-.page.page-schedule.animation.ng-enter.ng-enter-active {
-  -webkit-transform: translateY(0%);
-  -moz-transform: translateY(0%);
-  -o-transform: translateY(0%);
-  transform: translateY(0%);
-}
-.page.page-schedule.animation.ng-leave.ng-leave-active {
-  -webkit-transform: translateY(100%);
-  -moz-transform: translateY(100%);
-  -o-transform: translateY(100%);
-  transform: translateY(100%);
-}
+  /******************/
 
-.page.page-submission.animation.ng-enter {
-  -webkit-transform: translateX(100%);
-  -moz-transform: translateX(100%);
-  -o-transform: translateX(100%);
-  transform: translateX(100%);
-}
-.page.page-submission.animation.ng-leave {
-  -webkit-transform: translateX(0%);
-  -moz-transform: translateX(0%);
-  -o-transform: translateX(0%);
-  transform: translateX(0%);
-}
-.page.page-submission.animation.ng-enter.ng-enter-active {
-  -webkit-transform: translateX(0%);
-  -moz-transform: translateX(0%);
-  -o-transform: translateX(0%);
-  transform: translateX(0%);
-}
-.page.page-submission.animation.ng-leave.ng-leave-active {
-  -webkit-transform: translateX(100%);
-  -moz-transform: translateX(100%);
-  -o-transform: translateX(100%);
-  transform: translateX(100%);
+  .page.page-registration.animation.ng-enter {
+    opacity: 0;
+  }
+  .page.page-registration.animation.ng-enter .sidebar-header.registration {
+    background-color: #ffffff;
+  }
+  .page.page-registration.animation.ng-leave {
+    opacity: 0;
+  }
+  .page.page-registration.animation.ng-leave .sidebar-header.registration {
+    background-color: #d43e7d;
+  }
+  .page.page-registration.animation.ng-enter.ng-enter-active {
+    opacity: 1;
+  }
+  .page.page-registration.animation.ng-enter.ng-enter-active .sidebar-header.registration {
+    background-color: #d43e7d;
+  }
+  .page.page-registration.animation.ng-leave.ng-leave-active {
+    opacity: 0;
+  }
+  .page.page-registration.animation.ng-leave.ng-leave-active .sidebar-header.registration {
+    background-color: #ffffff;
+  }
 }

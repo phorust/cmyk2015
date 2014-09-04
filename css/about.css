@@ -1,11 +1,28 @@
 .closePage.about {
+  right: 65px;
+  background-color: #ffffff;
+}
+.closePage.registration .close {
   background-color: #00a8d4;
 }
 .closePage.about:hover {
-  background-color: #ffffff;
+  background-color: #00a8d4;
 }
 .closePage.about:hover .close {
-  background: #00a8d4;
+  background-color: #ffffff;
+}
+.arrow.about {
+  right: 15px;
+  background-color: #ffffff;
+}
+.arrow.about .point {
+  background-color: #00a8d4;
+}
+.arrow.about:hover {
+  background-color: #00a8d4;
+}
+.arrow.about:hover .point {
+  background-color: #ffffff;
 }
 
 .sidebar-header.about {
@@ -22,11 +39,16 @@
 .sidebar-header .header-wrapper h1 {
   font-family: "Lato";
   font-size: 35px;
-  letter-spacing: 10px;
   font-weight: 100;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 50%;
+}
+.sidebar-header .header-wrapper h1 span.letter-spacing {
+  letter-spacing: 10px;
+}
+.sidebar-header .header-wrapper .logistics {
+  text-align: center;
 }
 .sidebar-header .header-wrapper .logistics ul {
   font-family: "Lato";
@@ -35,16 +57,18 @@
   letter-spacing: 5px;
   list-style-type: none;
   padding: 0px;
+  display: inline-block;
 }
 .sidebar-header .header-wrapper .logistics ul li {
   margin: 0px;
-  margin-left: 20px;
   margin-bottom: 20px;
-  display: inline-block;
+  display: block;
+  text-align: left;
 }
 .sidebar-header .header-wrapper .logistics ul li .fav {
   height: 32px;
   width: 32px;
+  margin-right: 5px;
   vertical-align: middle;
 }
 .sidebar-header .header-wrapper .logistics ul li .log-text {
@@ -60,10 +84,11 @@
 }
 .about-body .about-wrapper {
   padding: 40px 85px 40px 50px;
+  height: 100%;
 }
 .about-body .about-wrapper .section-wrapper {
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .about-body .about-wrapper .section-wrapper .image {
   float: left;
@@ -90,7 +115,7 @@
   .sidebar-header {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 315px;
   }
   .sidebar-header .header-wrapper {
     top: 0%;
@@ -102,6 +127,7 @@
   .sidebar-header .header-wrapper h1 {
     margin-top: 0px;
     margin-bottom: 20px;
+    padding-top: 40px;
   }
   .about-body {
     padding-left: 0px;
