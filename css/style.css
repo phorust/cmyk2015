@@ -43,24 +43,27 @@ html, body {
   position: fixed;
   top: 30px;
   right: 30px;
-  background: none;
+  background: #00a8d4;
   border-radius: 50%;
-  border: 2px solid #ffffff;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   -webkit-transition: border 0.25s;
   -moz-transition: border 0.25s;
   -o-transition: border 0.25s;
   transition: border 0.25s;
+  -webkit-transition: background 0.25s;
+  -moz-transition: background 0.25s;
+  -o-transition: background 0.25s;
+  transition: background 0.25s;
 }
 .closePage .close {
   z-index: 99999999;
   position: absolute;
-  width: 20px;
-  height: 3px;
+  width: 22px;
+  height: 4px;
   background: #ffffff;
-  top: 12px;
-  left: 3px;
+  top: 18px;
+  left: 9px;
   -webkit-transition: background 0.25s;
   -moz-transition: background 0.25s;
   -o-transition: background 0.25s;
@@ -79,10 +82,10 @@ html, body {
   transform: rotate(-45deg);
 }
 .closePage:hover {
-  border: 2px solid #cccccc;
+  background: #ffffff;
 }
 .closePage:hover .close {
-  background: #cccccc;
+  background: #00a8d4;
 }
 
 .circle-wrapper.disabled {
