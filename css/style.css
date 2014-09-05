@@ -41,8 +41,8 @@ html, body {
 .closePage {
   z-index: 99999999;
   position: fixed;
-  top: 30px;
-  right: 30px;
+  top: 25px;
+  right: 45px;
   background: #00a8d4;
   border-radius: 50%;
   width: 40px;
@@ -114,7 +114,7 @@ html, body {
   }
 }
 .arrow {
-  position: absolute;
+  position: fixed;
   height: 40px;
   width: 40px;
   top: 295px;
@@ -186,7 +186,36 @@ html, body {
 }
 @media (min-width: 768px) {
   .arrow {
-    display: none;
+    height: 30px;
+    width: 30px;
+  }
+  .arrow .point {
+    height: 3px;
+    width: 12px;
+  }
+  .arrow.arrow-back {
+    top: 30px;
+    right: 110px;
+  }
+  .arrow.arrow-back .point1 {
+    top: 10px;
+    left: 8px;
+  }
+  .arrow.arrow-back .point2 {
+    top: 17px;
+    left: 8px;
+  }
+  .arrow.arrow-fwd {
+    top: 30px;
+    right: 20px;
+  }
+  .arrow.arrow-fwd .point1 {
+    top: 10px;
+    left: 10px;
+  }
+  .arrow.arrow-fwd .point2 {
+    top: 17px;
+    left: 10px;
   }
 }
 

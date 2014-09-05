@@ -12,7 +12,7 @@
 }
 @media (min-width: 768px) {
   .closePage.registration {
-    right: 30px;
+    right: 60px;
     background-color: #d43e7d;
   }
   .closePage.registration .close {

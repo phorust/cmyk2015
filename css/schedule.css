@@ -12,7 +12,7 @@
 }
 @media (min-width: 768px) {
   .closePage.schedule {
-    right: 30px;
+    right: 60px;
     background-color: #f2cd31;
   }
   .closePage.schedule .close {

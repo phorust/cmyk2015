@@ -13,7 +13,7 @@
 }
 @media (min-width: 768px) {
   .closePage.submission {
-    right: 30px;
+    right: 20px;
     background-color: #2d3236;
   }
   .closePage.submission .close {
@@ -38,6 +38,11 @@
 }
 .arrow.submission:hover .point {
   background-color: #ffffff;
+}
+@media (min-width: 768px) {
+  .arrow.submission {
+    right: 70px;
+  }
 }
 
 .sidebar-header.submission {

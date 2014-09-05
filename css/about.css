@@ -13,7 +13,7 @@
 }
 @media (min-width: 768px) {
   .closePage.about {
-    right: 30px;
+    right: 60px;
     background-color: #00a8d4;
   }
   .closePage.about .close {
@@ -38,6 +38,11 @@
 }
 .arrow.about:hover .point {
   background-color: #ffffff;
+}
+@media (min-width: 768px) {
+  .arrow.about {
+    right: 20px;
+  }
 }
 
 .sidebar-header.about {
@@ -147,4 +152,8 @@
   .about-body {
     padding-left: 0px;
   }
+}
+
+.hideBut {
+  display: none;
 }
