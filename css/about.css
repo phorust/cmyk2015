@@ -132,26 +132,26 @@
   text-align: left;
 }
 
-.who {
+.columns .title.who {
   width: 30%;
   height: auto;
   background-color: #bebebe;
 }
 
-.guests {
+.columns .title.guests {
   width: 30%;
   height: auto;
   background-color: #bebebe;
 }
 
-.what {
+.columns .title.what {
   width: 30%;
   height: auto;
   color: #666;
   background-color: #dddddd;
 }
 
-.title .panel {
+.columns .title .panel {
   font-family: 'Lato';
   font-size: 18 px;
   line-height: 30px;
