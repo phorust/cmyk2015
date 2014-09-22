@@ -167,43 +167,50 @@
 }
 
 @media (max-width: 1160px) {
-  .guests {
+  .columns {
+    font-size: 0;
+  }
+
+  .columns .title.guests {
+    margin: 0px;
     margin-top: 20px;
-    clear: both;
-    width: 92.5%;
+    width: 100%;
     text-align: center;
   }
 
-  .who {
-    width: 45%;
-
+  .columns .title.who {
+    width: 48%;
+    margin: 0;
+    margin-right: 2%;
   }
 
-  .what {
-    width: 45%;
-
+  .columns .title.what {
+    width: 48%;
+    margin: 0;
+    margin-left: 2%;
   }
 }
 
 @media (max-width: 950px) {
-
-  .panel {
+  .columns .title {
     display: block;
   }
-  .guests {
+  .columns .title.guests {
+    margin: 0;
     margin-top: 20px;
-    width: 95%;
+    width: 100%;
     text-align: center;
   }
 
-  .who {
-    width: 95%;
+  .columns .title.who {
+    margin: 0;
+    width: 100%;
     margin-top: 20px;
-
   }
 
-  .what {
-    width: 95%;
+  .columns .title.what {
+    margin: 0;
+    width: 100%;
     margin-top: 20px;
   }
 }
