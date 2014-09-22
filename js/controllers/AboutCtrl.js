@@ -5,7 +5,11 @@ cmyk.controller('AboutController', function($scope, $location) {
     $location.path('/');
   };
 
-  $scope.place = function(url) {
-    $location.path("/" + url);
+  $scope.place = function(url, disabled) {
+    if (disabled == true) {
+        console.log('Please check back for updates!');
+    } else {
+        $location.path("/" + url);
+    }
   }
 });

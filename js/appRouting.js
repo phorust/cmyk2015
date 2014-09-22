@@ -8,18 +8,18 @@ cmyk.config(['$routeProvider', '$locationProvider', function($routeProvider, $lo
       templateUrl: 'views/about.html',
       controller: 'AboutController'
     })
-    .when('/registration', {
-      templateUrl: 'views/registration.html',
-      controller: 'RegistrationController'
-    })
-    .when('/schedule', {
-      templateUrl: 'views/schedule.html',
-      controller: 'ScheduleController'
-    })
-    .when('/submission', {
-      templateUrl: 'views/submission.html',
-      controller: 'SubmissionController'
-    })
+    // .when('/registration', {
+    //   templateUrl: 'views/registration.html',
+    //   controller: 'RegistrationController'
+    // })
+    // .when('/schedule', {
+    //   templateUrl: 'views/schedule.html',
+    //   controller: 'ScheduleController'
+    // })
+    // .when('/submission', {
+    //   templateUrl: 'views/submission.html',
+    //   controller: 'SubmissionController'
+    // })
     .otherwise({
       templateUrl: 'views/home.html',
       controller: 'MainController'

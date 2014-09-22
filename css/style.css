@@ -218,6 +218,15 @@ html, body {
     left: 10px;
   }
 }
+.arrow.btn-disable {
+  cursor: default !important;
+}
+.arrow.btn-disable .point {
+  background: #999999 !important;
+}
+.arrow.btn-disable:hover {
+  background: #ffffff !important;
+}
 
 .sidebar-header {
   position: fixed;
