@@ -111,9 +111,12 @@
   letter-spacing: 2px;
   line-height: 30px;
   padding: 100px 50px 40px 50px;
-
 }
 
+.one-liner a {
+  color: #00a8d4;
+  text-decoration: none;
+}
 .columns {
   padding: 0px 50px 50px 50px;
   font-size: 0;
