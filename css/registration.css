@@ -1,3 +1,20 @@
+.eventbrite {
+  margin: 90px 30px;
+}
+
+.event {
+  font-size: 20px;
+  color: #aaa;
+  letter-spacing: 2px;
+  line-height: 30px;
+  padding: 5px;
+  margin-bottom: 40px;
+}
+
+.event a {
+  color: #d43e7d;
+  text-decoration: none;
+}
 .closePage.registration {
   background-color: #ffffff;
 }
@@ -10,6 +27,7 @@
 .closePage.registration:hover .close {
   background: #ffffff;
 }
+
 @media (min-width: 768px) {
   .closePage.registration {
     right: 60px;
