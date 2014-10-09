@@ -1,3 +1,24 @@
+.schedule-wrapper{
+  padding: 40px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.activity {
+  height: 80px;
+  color: #aaa;
+  font-size: 20px;
+}
+
+.time-sec {
+  color: #f2cd31;
+  font-size: 30px;
+}
+
+.description {
+  margin-left: 1px;
+}
+
 .closePage.schedule {
   background-color: #ffffff;
 }
