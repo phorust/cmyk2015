@@ -169,6 +169,29 @@
   margin-top: 20px;
 }
 
+.guest-descr {
+  margin-bottom: 15px;
+}
+
+.guest-descr a{
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 10px;
+  text-transform: uppercase;
+  color: #eee;
+  letter-spacing: .5px;
+  font-family: 'Montserrat'; 
+}
+
+.guest-descr a:hover{
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Montserrat'; 
+}
+
 @media (max-width: 1160px) {
   .columns {
     font-size: 0;
