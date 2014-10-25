@@ -49,6 +49,27 @@
   background-color: #2d3236;
 }
 
-.cent {
-  text-align: center !important;
+.submission-body {
+  height: 100%;
+}
+
+.submission-body .submission-wrapper {
+  text-align: center;
+  position: relative;
+  font-size: 24px;
+  padding: 40px;
+}
+
+@media (min-width: 768px) {
+  .submission-body .submission-wrapper {
+    text-align: center;
+    font-size: 24px;
+    padding: 40px;
+    margin-left: 250px;
+    position: relative;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 }
