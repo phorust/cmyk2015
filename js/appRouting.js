@@ -20,10 +20,6 @@ cmyk.config(['$routeProvider', '$locationProvider', function($routeProvider, $lo
       templateUrl: 'views/submission.html',
       controller: 'SubmissionController'
     })
-    .when('/thankyou', {
-      templateUrl: 'views/thankyou.html',
-      controller: 'ThankController'
-    })
     .otherwise({
       templateUrl: 'views/home.html',
       controller: 'MainController'
