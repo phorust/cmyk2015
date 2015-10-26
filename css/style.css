@@ -280,7 +280,7 @@ html, body {
 }
 .event-wrapper.event-top {
   display: none;
-  margin-bottom: 80px; 
+  margin-bottom: 80px;
 }
 .event-wrapper.event-bottom {
   margin-top: 80px;
@@ -316,7 +316,7 @@ html, body {
   font-weight: 200;
   font-size: 16px;
   text-transform: uppercase;
-  margin-top: 30px; 
+  margin-top: 30px;
   text-align: center;
   font-family: 'Lato';
   color: #788084;
@@ -325,16 +325,16 @@ html, body {
   letter-spacing: 6px;
 }
 .circle-wrapper:hover .circlespin {
-  -webkit-animation: rotating 0.8s cubic-bezier(0,0,0.15,1);
-  -moz-animation: rotating 0.8s cubic-bezier(0,0,0.15,1);
-  -o-animation: rotating 0.8s cubic-bezier(0,0,0.15,1);
-  animation: rotating 0.8s cubic-bezier(0,0,0.15,1);
+  -webkit-animation: rotating 0.8s cubic-bezier(.58,-0.34,.45,1.37);
+  -moz-animation: rotating 0.8s cubic-bezier(.58,-0.34,.45,1.37);
+  -o-animation: rotating 0.8s cubic-bezier(.58,-0.34,.45,1.37);
+  animation: rotating 0.8s cubic-bezier(.58,-0.34,.45,1.37);
 }
 .circle-wrapper:hover .circlespin45 {
-  -webkit-animation: rotating45 0.8s cubic-bezier(0,0,0.15,1);
-  -moz-animation: rotating45 0.8s cubic-bezier(0,0,0.15,1);
-  -o-animation: rotating45 0.8s cubic-bezier(0,0,0.15,1);
-  animation: rotating45 0.8s cubic-bezier(0,0,0.15,1);
+  -webkit-animation: rotating45 0.8s cubic-bezier(.58,-0.34,.45,1.37);
+  -moz-animation: rotating45 0.8s cubic-bezier(.58,-0.34,.45,1.37);
+  -o-animation: rotating45 0.8s cubic-bezier(.58,-0.34,.45,1.37);
+  animation: rotating45 0.8s cubic-bezier(.58,-0.34,.45,1.37);
 }
 
 .circle {
