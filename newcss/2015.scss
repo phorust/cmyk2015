@@ -9,6 +9,8 @@ $lightmagenta : #e38aa9;
 $lightyellow  : #f6df8b;
 $lightk       : #777e82;
 
+$transition-fast : 0.6s ease;
+
 body, html {
   margin: 0;
   width: 100%;
@@ -19,9 +21,34 @@ body, html {
   color: #788084;
 }
 
+body {
+  transition: background $transition-fast;
+  &.about {
+    background-color: $cyan;
+    #about {
+      .content-header {
+        color: white;
+        .content-card {
+          color: white;
+        }
+      }
+    }
+  }
+  &.schedule {
+    background-color: $yellow;
+  }
+  &.registration {
+    background-color: $magenta;
+  }
+  &.submissions {
+    background-color: $k;
+  }
+}
 
 .content-section {
   width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   .content-header {
     padding: 20px 40px;
     color: white;
@@ -32,13 +59,10 @@ body, html {
     }
 
     .content-card {
-      padding: 20px;
+      padding: 20px 10px;
       width: 100%;
-      background-color: white;
       border-radius: 3px;
       box-sizing: border-box;
-      color: $lightk;
-      margin-bottom: 15px;
     }
   }
 }
@@ -75,21 +99,65 @@ body, html {
 
 #about {
   .content-header {
-    background-color: $cyan;
+    // background-color: $cyan;
+    color: #788084;
+    .content-card {
+      transition: color $transition-fast;
+      color: #788084;
+    }
+  }
+}
+
+.panel {
+  font-family: 'Lato';
+  font-size: 18 px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.guest-id {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.guest-descr {
+  margin-bottom: 15px;
+}
+
+.guest-descr a{
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 10px;
+  text-transform: uppercase;
+  color: #eee;
+  letter-spacing: .5px;
+  font-family: 'Montserrat';
+}
+
+.guest-descr a:hover{
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Montserrat';
+}
+
+#schedule {
+  .content-header {
+    // background-color: $yellow;
   }
 }
 #registration {
   .content-header {
-    background-color: $magenta;
-  }
-}
-#schedule {
-  .content-header {
-    background-color: $yellow;
+    // background-color: $magenta;
   }
 }
 #submissions {
   .content-header {
-    background-color: $k;
+    // background-color: $k;
   }
 }

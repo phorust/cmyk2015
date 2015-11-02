@@ -11,6 +11,8 @@
   <link rel="stylesheet" type="text/css" href="newcss/compiled/2015.css">
   <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lato:300,300italic' rel='stylesheet' type='text/css'>
+  <script src="node_modules/babel-core/browser.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
   <nav>
@@ -101,12 +103,37 @@
         We'll be providing exciting design prompts to get you going,
         and an expert panel of judges and mentors to help you along the way.</p>
       </div>
-    </div>
-  </div>
-  <div id="registration" class='content-section'>
-    <div class="slant"></div>
-    <div class='content-header'>
-      <h1>R E G I S T R A T I O N</h1>
+      <div class="content-card">
+        <h2>Who's going to be there?</h2>
+        <div class="panel guest-body">
+          <div class="guest-id">Keynote Speaker:</div>
+           Irene Tran
+            <div class="guest-descr">
+            <a href="http://www.irenetran.com">Independent Designer</a>
+            </div>
+          <div class="guest-id">Judges:</div>
+          Cassandra Smolcic<br>
+          <div class="guest-descr">
+          <a href="http://cassandrasmolcic.com/">Graphic Designer, Pixar</a>
+          </div>
+          Butler Looney<br>
+          <div class="guest-descr">
+          <a href="http://www.turnerduckworth.com/">Lead Designer, Turner Duckworth</a>
+          </div>
+          Zethus Suen<br>
+          <div class="guest-descr">
+          <a href="http://www.zethussuen.com/">UX Designer, Netflix</a>
+          </div>
+          Hamza Siddiqui<br>
+          <div class="guest-descr">
+          <a href="https://dribbble.com/since91">UX Designer, Adobe</a>
+          </div>
+          Brian Bailey<br>
+          <div class="guest-descr">
+          <a href="http://bailey.is/">Interaction Designer, Wells Fargo</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div id="schedule" class='content-section'>
@@ -115,11 +142,74 @@
       <h1>S C H E D U L E</h1>
     </div>
   </div>
+  <div id="registration" class='content-section'>
+    <div class="slant"></div>
+    <div class='content-header'>
+      <h1>R E G I S T R A T I O N</h1>
+    </div>
+  </div>
   <div id="submissions" class='content-section'>
     <div class="slant"></div>
     <div class='content-header'>
       <h1>S U B M I S S I O N S</h1>
     </div>
   </div>
+
+  <script type="text/babel">
+    $(document).ready(_ => {
+      $(window).on('scroll', _ => {
+        var scrollHeight = window.pageYOffset;
+
+        if (scrollHeight > $("#submissions").offset().top) {
+          $('body').attr('class', 'submissions');
+        } else if (scrollHeight > $('#registration').offset().top) {
+          $('body').attr('class', 'registration');
+        } else if (scrollHeight > $('#schedule').offset().top) {
+          $('body').attr('class', 'schedule');
+        } else if (scrollHeight > $("#about").offset().top) {
+          $('body').attr('class', 'about');
+        } else {
+          $('body').attr('class', '');
+        }
+      });
+    });
+  </script>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 </body>
 </html>

@@ -206,8 +206,25 @@ body, html {
   font-size: 16px;
   color: #788084; }
 
+body {
+  transition: background 0.6s ease; }
+  body.about {
+    background-color: #00a8d4; }
+    body.about #about .content-header {
+      color: white; }
+      body.about #about .content-header .content-card {
+        color: white; }
+  body.schedule {
+    background-color: #f2cd31; }
+  body.registration {
+    background-color: #d43e7d; }
+  body.submissions {
+    background-color: #2d3236; }
+
 .content-section {
-  width: 100%; }
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto; }
   .content-section .content-header {
     padding: 20px 40px;
     color: white;
@@ -216,13 +233,10 @@ body, html {
       font-size: 28px;
       font-weight: 100; }
     .content-section .content-header .content-card {
-      padding: 20px;
+      padding: 20px 10px;
       width: 100%;
-      background-color: white;
       border-radius: 3px;
-      box-sizing: border-box;
-      color: #777e82;
-      margin-bottom: 15px; }
+      box-sizing: border-box; }
 
 .logistics {
   text-align: center; }
@@ -253,13 +267,40 @@ body, html {
   letter-spacing: 1px; }
 
 #about .content-header {
-  background-color: #00a8d4; }
+  color: #788084; }
+  #about .content-header .content-card {
+    transition: color 0.6s ease;
+    color: #788084; }
 
-#registration .content-header {
-  background-color: #d43e7d; }
+.panel {
+  font-family: 'Lato';
+  font-size: 18 px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
-#schedule .content-header {
-  background-color: #f2cd31; }
+.guest-id {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  margin-top: 20px; }
 
-#submissions .content-header {
-  background-color: #2d3236; }
+.guest-descr {
+  margin-bottom: 15px; }
+
+.guest-descr a {
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 10px;
+  text-transform: uppercase;
+  color: #eee;
+  letter-spacing: .5px;
+  font-family: 'Montserrat'; }
+
+.guest-descr a:hover {
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Montserrat'; }
