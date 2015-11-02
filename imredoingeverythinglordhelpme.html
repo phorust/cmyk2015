@@ -17,7 +17,7 @@
 <body>
   <nav>
     <div class="cmyk-wrapper">
-      <div class="circle-wrapper" data-ng-click="place('about', false)">
+      <div id="about-circle" class="circle-wrapper">
         <div class="circle circle1 circlespin">
           <div class="top"></div>
           <div class="line"></div>
@@ -27,7 +27,7 @@
           <span class="letterspace">abou</span><span>t</span>
         </div>
       </div>
-      <div class="circle-wrapper" data-ng-click="place('registration', false)">
+      <div id="registration-circle" class="circle-wrapper">
         <div class="circle circle2 circlespin">
           <div class="left"></div>
           <div class="line"></div>
@@ -37,7 +37,7 @@
           <span class="letterspace">registratio</span><span>n</span>
         </div>
       </div>
-      <div class="circle-wrapper" data-ng-click="place('schedule', false)">
+      <div id="schedule-circle" class="circle-wrapper">
         <div class="circle circle3 circlespin">
           <div class="left"></div>
           <div class="line"></div>
@@ -47,7 +47,7 @@
           <span class="letterspace">schedul</span><span>e</span>
         </div>
       </div>
-      <div class="circle-wrapper" data-ng-click="place('submission', false)">
+      <div id="submissions-circle" class="circle-wrapper">
         <div class="circle circle4 circlespin45">
           <div class="top"></div>
           <div class="bottom"></div>
@@ -60,8 +60,8 @@
       </div>
 
       <div id="nameplate">
-        <h1>CMYK</h1>
-        DESIGNATHON
+        <div class="event-text">CMYK</div>
+        <div class="designathon"><span class="letterspacing">DESIGNATHO</span>N</div>
       </div>
     </div>
   </nav>
@@ -140,6 +140,16 @@
     <div class="slant"></div>
     <div class='content-header'>
       <h1>S C H E D U L E</h1>
+      <div class="content-card">
+        <!-- <div class="schedule-item">
+          <div class="schedule-time">9:00 AM</div><div class="schedule-desc">
+            <div class="text"><h2>Arrive</h2>
+              <p>Jacobs Hall, 2530 Ridge Road, Berkeley</p>
+            </div>
+          </div>
+        </div> -->
+        To be announced!
+      </div>
     </div>
   </div>
   <div id="registration" class='content-section'>
@@ -160,17 +170,30 @@
       $(window).on('scroll', _ => {
         var scrollHeight = window.pageYOffset;
 
-        if (scrollHeight > $("#submissions").offset().top) {
+        if (scrollHeight >= $("#submissions").offset().top) {
           $('body').attr('class', 'submissions');
-        } else if (scrollHeight > $('#registration').offset().top) {
+        } else if (scrollHeight >= $('#registration').offset().top) {
           $('body').attr('class', 'registration');
-        } else if (scrollHeight > $('#schedule').offset().top) {
+        } else if (scrollHeight >= $('#schedule').offset().top) {
           $('body').attr('class', 'schedule');
-        } else if (scrollHeight > $("#about").offset().top) {
+        } else if (scrollHeight >= $("#about").offset().top) {
           $('body').attr('class', 'about');
         } else {
           $('body').attr('class', '');
         }
+      });
+
+      $("#about-circle").click(_ => {
+        $('html,body').animate({ scrollTop: $("#about").offset().top+1 }, 600);
+      });
+      $("#schedule-circle").click(_ => {
+        $('html,body').animate({ scrollTop: $("#schedule").offset().top+1 }, 600);
+      });
+      $("#registration-circle").click(_ => {
+        $('html,body').animate({ scrollTop: $("#registration").offset().top+1 }, 600);
+      });
+      $("#submissions-circle").click(_ => {
+        $('html,body').animate({ scrollTop: $("#submissions").offset().top+1 }, 600);
       });
     });
   </script>
