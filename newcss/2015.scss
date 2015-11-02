@@ -1,0 +1,95 @@
+@import 'nav';
+
+$cyan         : #00a8d4;
+$magenta      : #d43e7d;
+$yellow       : #f2cd31;
+$k            : #2d3236;
+$lightcyan    : #7ec6e4;
+$lightmagenta : #e38aa9;
+$lightyellow  : #f6df8b;
+$lightk       : #777e82;
+
+body, html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+
+  font-family: "Lato";
+  font-size: 16px;
+  color: #788084;
+}
+
+
+.content-section {
+  width: 100%;
+  .content-header {
+    padding: 20px 40px;
+    color: white;
+    text-align: center;
+    h1 {
+      font-size: 28px;
+      font-weight: 100;
+    }
+
+    .content-card {
+      padding: 20px;
+      width: 100%;
+      background-color: white;
+      border-radius: 3px;
+      box-sizing: border-box;
+      color: $lightk;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.logistics {
+  text-align: center;
+}
+.logistics ul {
+  font-family: "Lato";
+  font-weight: 100;
+  font-size: 25px;
+  letter-spacing: 5px;
+  list-style-type: none;
+  padding: 0px;
+  display: inline-block;
+}
+.logistics ul li {
+  margin: 0px;
+  margin-bottom: 20px;
+  display: inline-block;
+  text-align: left;
+}
+.logistics ul li .fav {
+  height: 32px;
+  width: 32px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.logistics ul li .log-text {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+
+#about {
+  .content-header {
+    background-color: $cyan;
+  }
+}
+#registration {
+  .content-header {
+    background-color: $magenta;
+  }
+}
+#schedule {
+  .content-header {
+    background-color: $yellow;
+  }
+}
+#submissions {
+  .content-header {
+    background-color: $k;
+  }
+}

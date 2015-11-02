@@ -1,0 +1,219 @@
+nav {
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.cmyk-wrapper {
+  width: 1100px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1100px) {
+  .cmyk-wrapper {
+    width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  /* not working */
+  .cmyk-wrapper {
+    width: 400px;
+  }
+}
+
+.circle-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+.circle-wrapper .title {
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  text-align: center;
+  font-family: 'Lato';
+  color: #788084;
+}
+.circle-wrapper .title .letterspace {
+  letter-spacing: 6px;
+}
+.circle-wrapper:hover .circlespin {
+  -webkit-animation: rotating 0.8s cubic-bezier(.58,-0.34,.45,1.37);
+  -moz-animation: rotating 0.8s cubic-bezier(.58,-0.34,.45,1.37);
+  -o-animation: rotating 0.8s cubic-bezier(.58,-0.34,.45,1.37);
+  animation: rotating 0.8s cubic-bezier(.58,-0.34,.45,1.37);
+}
+.circle-wrapper:hover .circlespin45 {
+  -webkit-animation: rotating45 0.8s cubic-bezier(.58,-0.34,.45,1.37);
+  -moz-animation: rotating45 0.8s cubic-bezier(.58,-0.34,.45,1.37);
+  -o-animation: rotating45 0.8s cubic-bezier(.58,-0.34,.45,1.37);
+  animation: rotating45 0.8s cubic-bezier(.58,-0.34,.45,1.37);
+}
+
+.circle {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 0 30px;
+}
+
+.circle1 .top {
+  width: 200px;
+  height: 100px;
+  background-color: #7ec6e4;
+  border-radius: 100px 100px 0 0;
+}
+.circle1 .bottom {
+  width: 200px;
+  height: 100px;
+  background-color: #00a8d4;
+  border-radius: 0 0 100px 100px;
+}
+.circle1 .line {
+  position: absolute;
+  top: 97px;
+  right: 0px;
+  height: 6px;
+  width: 100px;
+  border-radius: 2px 0 0 2px;
+  background: #ffffff;
+}
+
+.circle2 .left {
+  float: left;
+  width: 100px;
+  height: 200px;
+  background-color: #d43e7d;
+  border-radius: 100px 0 0 100px;
+}
+.circle2 .right {
+  float: right;
+  width: 100px;
+  height: 200px;
+  background-color: #e38aa9;
+  border-radius: 0 100px 100px 0;
+}
+.circle2 .line {
+  position: absolute;
+  top: 100px;
+  right: 97px;
+  height: 100px;
+  width: 6px;
+  border-radius: 2px 2px 0 0;
+  background: #ffffff;
+}
+
+.circle3 .left {
+  float: left;
+  width: 100px;
+  height: 200px;
+  background-color: #f6df8b;
+  border-radius: 100px 0 0 100px;
+}
+.circle3 .right {
+  float: right;
+  width: 100px;
+  height: 200px;
+  background-color: #f2cd31;
+  border-radius: 0 100px 100px 0;
+}
+.circle3 .line {
+  position: absolute;
+  top: 0px;
+  right: 97px;
+  height: 100px;
+  width: 6px;
+  border-radius: 0 0 2px 2px;
+  background: #ffffff;
+}
+
+.circle4 {
+  background: #777e82;
+  border-radius: 50%;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.circle4 .top {
+  position: absolute;
+  top: 50px;
+  left: -50px;
+  width: 200px;
+  height: 100px;
+  background-color: #2d3236;
+  border-radius: 100px 100px 0 0;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.circle4 .bottom {
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  width: 200px;
+  height: 100px;
+  background-color: #2d3236;
+  border-radius: 0 0 100px 100px;
+}
+.circle4 .line-vertical {
+  position: absolute;
+  top: -1px;
+  right: 97px;
+  height: 104px;
+  width: 6px;
+  border-radius: 0 0 2px 2px;
+  background: #ffffff;
+}
+.circle4 .line-horizontal {
+  position: absolute;
+  top: 97px;
+  right: -1px;
+  height: 6px;
+  width: 104px;
+  border-radius: 2px 0 0 2px;
+  background: #ffffff;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes rotating45 {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(405deg);
+  }
+}
+@-webkit-keyframes rotating45 {
+  from{
+    -webkit-transform: rotate(45deg);
+  }
+  to{
+    -webkit-transform: rotate(405deg);
+  }
+}
