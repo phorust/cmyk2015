@@ -50,10 +50,6 @@ p {
 
 body {
   transition: background $transition-fast;
-  #sun-spacer #sun-section {
-    transition: background $transition-fast;
-    background-color: white;
-  }
   &.about {
     background-color: $cyan;
     #about {
@@ -226,6 +222,7 @@ body {
       width: 100%;
       transition: background-color $transition-fast;
       overflow: hidden;
+      border-bottom: 1px solid white;
       &.active {
         position: fixed;
       }
@@ -234,6 +231,7 @@ body {
         width: 45px;
         height: 45px;
         margin: 70px auto 0;
+        // margin-left: 250px;
         .sun-ball {
           width: 100%;
           height: 100%;
@@ -250,7 +248,7 @@ body {
           left: 50%;
           width: 3px;
           height: 160%;
-          
+
           b, s {
             position: absolute;
             top: 0;
@@ -258,6 +256,7 @@ body {
             width: 100%;
             height: 12%;/* 100*30/100=18.75 */
             background: white;
+            border-radius: 3px;
           }
           s {
             top: auto;
