@@ -17,12 +17,43 @@ body, html {
   height: 100%;
 
   font-family: "Lato";
-  font-size: 16px;
+  font-size: 18px;
   color: #788084;
+}
+
+h1 {
+  font-size: 36px;
+  font-size: 2rem;
+
+  @media all and (max-width: 480px) {
+    font-size: 32px;
+    font-size: 1.75rem;
+  }
+}
+
+h2 {
+  font-size: 27px;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 23px;
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 18px;
+  font-size: 1rem;
+  line-height: 27px;
+  line-height: 1.5rem;
 }
 
 body {
   transition: background $transition-fast;
+  #sun-spacer #sun-section {
+    transition: background $transition-fast;
+    background-color: white;
+  }
   &.about {
     background-color: $cyan;
     #about {
@@ -33,15 +64,27 @@ body {
         }
       }
     }
+    #sun-spacer #sun-section {
+      background-color: $cyan;
+    }
   }
   &.schedule {
     background-color: $magenta;
+    #sun-spacer #sun-section {
+      background-color: $magenta;
+    }
   }
   &.registration {
     background-color: $yellow;
+    #sun-spacer #sun-section {
+      background-color: $yellow;
+    }
   }
   &.submissions {
     background-color: $k;
+    #sun-spacer #sun-section {
+      background-color: $k;
+    }
   }
 }
 
@@ -69,16 +112,14 @@ body {
 .content-section {
   width: 100%;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
   .content-header {
     padding: 20px 40px;
     color: white;
     text-align: center;
     h1 {
-      font-size: 28px;
       font-weight: 100;
     }
-
     .content-card {
       padding: 20px 10px;
       width: 100%;
@@ -94,7 +135,7 @@ body {
 .logistics ul {
   font-family: "Lato";
   font-weight: 100;
-  font-size: 25px;
+  font-size: 28px;
   letter-spacing: 5px;
   list-style-type: none;
   padding: 0px;
@@ -113,7 +154,7 @@ body {
   vertical-align: middle;
 }
 .logistics ul li .log-text {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 1px;
 }
 
@@ -131,8 +172,10 @@ body {
 
 .panel {
   font-family: 'Lato';
-  font-size: 18 px;
-  line-height: 30px;
+  font-size: 22px;
+  font-size: 1.25rem;
+  line-height: 36px;
+  line-height: 2rem;
   letter-spacing: 1px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -148,10 +191,12 @@ body {
   margin-bottom: 15px;
 }
 
-.guest-descr a{
+.guest-descr a {
   text-decoration: none;
-  font-size: 10px;
-  line-height: 10px;
+  font-size: 12px;
+  font-size: 0.67rem;
+  line-height: 12px;
+  line-height: 0.67rem;
   text-transform: uppercase;
   color: #eee;
   letter-spacing: .5px;
@@ -160,40 +205,145 @@ body {
 
 .guest-descr a:hover{
   text-decoration: none;
-  font-size: 10px;
-  line-height: 10px;
   text-transform: uppercase;
   color: #fff;
   font-family: 'Montserrat';
 }
 
 #schedule {
-  .content-header {
-    // background-color: $yellow;
-  }
-
-  .schedule-item {
+  #sun-spacer {
+    position: relative;
+    height: 90px;
     width: 100%;
-
-    .schedule-time {
-      display: inline-block;
-      width: 100px;
-      text-align: right;
-      padding-right: 30px;
-      height: 50px;
-      line-height: 50px;
-    }
-    .schedule-desc {
-      display: inline-block;
-      width: 300px;
-      text-align: left;
-
-      .text {
-        display: block;
-
+    margin-bottom: 20px;
+    z-index: 10;
+    #sun-section {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 90px;
+      width: 100%;
+      transition: background-color $transition-fast;
+      overflow: hidden;
+      &.active {
+        position: fixed;
+      }
+      #sun {
         position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+        width: 45px;
+        height: 45px;
+        margin: 70px auto 0;
+        .sun-ball {
+          width: 100%;
+          height: 100%;
+          -webkit-border-radius: 100%;
+          -moz-border-radius: 100%;
+          -ie-border-radius: 100%;
+          -o-border-radius: 100%;
+          border-radius: 100%;
+          background: #ffffff;
+        }
+        .sun-rays {
+          position: absolute;
+          top: -30%;
+          left: 50%;
+          width: 3px;
+          height: 160%;
+          
+          b, s {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 12%;/* 100*30/100=18.75 */
+            background: white;
+          }
+          s {
+            top: auto;
+            bottom: 0;
+          }
+          &:nth-child(10n+3) {
+            -webkit-transform:rotate(36deg);
+            -moz-transform:rotate(36deg);
+            -o-transform:rotate(36deg);
+            -ie-transform:rotate(36deg);
+            transform:rotate(36deg);
+          }
+          &:nth-child(10n+4) {
+            -webkit-transform:rotate(72deg);
+            -moz-transform:rotate(72deg);
+            -o-transform:rotate(72deg);
+            -ie-transform:rotate(72deg);
+            transform:rotate(72deg);
+          }
+          &:nth-child(10n+5) {
+            -webkit-transform:rotate(108deg);
+            -moz-transform:rotate(108deg);
+            -o-transform:rotate(108deg);
+            -ie-transform:rotate(108deg);
+            transform:rotate(108deg);
+          }
+          &:nth-child(10n+6) {
+            -webkit-transform:rotate(144deg);
+            -moz-transform:rotate(144deg);
+            -o-transform:rotate(144deg);
+            -ie-transform:rotate(144deg);
+            transform:rotate(144deg);
+          }
+        }
+      }
+    }
+  }
+  .content-card {
+    .schedule-item {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      color: #ffffff;
+
+      .schedule-time {
+        display: inline-block;
+        width: 20%;
+        margin-right: 2.5%;
+        font-size: 22px;
+        font-size: 1.25rem;
+        text-align: right;
+        vertical-align: top;
+      }
+      .schedule-desc {
+        display: inline-block;
+        width: 67.5%;
+        text-align: left;
+        vertical-align: top;
+
+        .schedule-desc-header {
+          margin-bottom: 10px;
+          font-size: 22px;
+          font-size: 1.25rem;
+        }
+
+        .schedule-desc-body {
+          font-size: 18px;
+          font-size: 1rem;
+          line-height: 18px;
+          line-height: 1rem;
+        }
+      }
+    }
+
+    @media all and (max-width: 480px) {
+      padding: 20px;
+      .schedule-item {
+        .schedule-time {
+          width: 100%;
+          margin-bottom: 15px;
+          display: block;
+          text-align: left;
+        }
+        .schedule-desc {
+          width: 100%;
+          display: block;
+        }
       }
     }
   }

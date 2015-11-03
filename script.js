@@ -1,18 +1,44 @@
-$(document).ready(_ => {
-  $(window).on('scroll', _ => {
-    var scrollHeight = window.pageYOffset;
+var setBackgroundColor = _ => {
+  var scrollHeight = window.pageYOffset;
 
-    if (scrollHeight >= $("#submissions").offset().top-50) {
-      $('body').attr('class', 'submissions');
-    } else if (scrollHeight >= $('#registration').offset().top-50) {
-      $('body').attr('class', 'registration');
-    } else if (scrollHeight >= $('#schedule').offset().top-50) {
-      $('body').attr('class', 'schedule');
-    } else if (scrollHeight >= $("#about").offset().top-50) {
-      $('body').attr('class', 'about');
+  if (scrollHeight >= $("#submissions").offset().top-100) {
+    $('body').attr('class', 'submissions');
+  } else if (scrollHeight >= $('#registration').offset().top-100) {
+    $('body').attr('class', 'registration');
+  } else if (scrollHeight >= $('#schedule').offset().top-100) {
+    $('body').attr('class', 'schedule');
+  } else if (scrollHeight >= $("#about").offset().top-100) {
+    $('body').attr('class', 'about');
+  } else {
+    $('body').attr('class', '');
+  }
+
+  if (scrollHeight >= $('#sun-spacer').offset().top && scrollHeight <= $('#registration').offset().top-100) {
+    $('#sun-spacer #sun-section').attr('class', 'active');
+
+    var scheduleHeight = $('#schedule').height() - $('#schedule .content-header').outerHeight(true) - 45;
+    var topHeight = $('#sun-spacer').offset().top;
+    var midHeight = topHeight + scheduleHeight/2;
+    var endHeight = topHeight + scheduleHeight;
+    var sun = 70;
+    if (scrollHeight > midHeight) {
+      sun = 25 + 120 * ((scrollHeight - midHeight) / (scheduleHeight/2));
     } else {
-      $('body').attr('class', '');
+      sun = 70 - 45 * ((scrollHeight - topHeight) / (scheduleHeight/2));
     }
+    $('#sun').css({
+      'margin-top': sun + 'px'
+    });
+  } else {
+    $('#sun-spacer #sun-section').attr('class', '');
+  }
+};
+
+$(document).ready(_ => {
+  setBackgroundColor();
+
+  $(window).on('scroll', _ => {
+    setBackgroundColor();
   });
 
   $("#about-circle").click(_ => {
