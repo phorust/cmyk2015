@@ -17,9 +17,21 @@ nav {
     width: 768px; } }
 
 @media (max-width: 768px) {
-  /* not working */
+  nav {
+    height: auto;
+    margin-bottom: 80px; }
   .cmyk-wrapper {
-    width: 400px; } }
+    width: 400px;
+    top: 0;
+    transform: none; }
+    .cmyk-wrapper .circle-section {
+      margin-top: 250px; }
+    .cmyk-wrapper #nameplate {
+      position: absolute;
+      height: 250px;
+      top: 50px;
+      width: 100%;
+      text-align: center; } }
 
 .circle-wrapper {
   position: relative;
