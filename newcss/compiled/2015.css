@@ -342,6 +342,13 @@ body {
   #about .content-header .content-card {
     transition: color 0.6s ease;
     color: #788084; }
+    #about .content-header .content-card a {
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 1px solid white;
+      color: inherit; }
+    #about .content-header .content-card .guest-descr a {
+      border: none; }
 
 .panel {
   font-family: 'Lato';

@@ -184,6 +184,16 @@ body {
     .content-card {
       transition: color $transition-fast;
       color: #788084;
+
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        border-bottom: 1px solid white;
+        color: inherit;
+      }
+      .guest-descr a {
+        border: none;
+      }
     }
   }
 }
