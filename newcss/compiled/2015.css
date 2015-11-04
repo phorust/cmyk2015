@@ -480,3 +480,13 @@ body {
     #schedule .content-card .schedule-item .schedule-desc {
       width: 100%;
       display: block; } }
+
+#registration {
+  color: white;
+  text-align: center; }
+  #registration a {
+    text-decoration: none;
+    color: black; }
+
+#submissions {
+  color: white; }

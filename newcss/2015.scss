@@ -349,11 +349,19 @@ body {
   }
 }
 #registration {
+  color: white;
+  text-align: center;
   .content-header {
     // background-color: $magenta;
   }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
 #submissions {
+  color: white;
   .content-header {
     // background-color: $k;
   }
