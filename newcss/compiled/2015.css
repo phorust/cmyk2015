@@ -216,7 +216,8 @@ body, html {
   height: 100%;
   font-family: "Lato";
   font-size: 18px;
-  color: #788084; }
+  color: #788084;
+  font-weight: 300; }
 
 h1 {
   font-size: 36px;
@@ -256,8 +257,17 @@ body {
       background-color: #d43e7d; }
   body.registration {
     background-color: #f2cd31; }
+    body.registration #submissions {
+      color: #444; }
+      body.registration #submissions .content-header {
+        color: #444; }
     body.registration #sun-spacer #sun-section {
       background-color: #f2cd31; }
+    body.registration #registration {
+      font-weight: 400;
+      color: #444; }
+      body.registration #registration .content-header {
+        color: #444; }
   body.submissions {
     background-color: #2d3236; }
     body.submissions #sun-spacer #sun-section {
@@ -353,8 +363,7 @@ body {
   text-decoration: none;
   font-size: 12px;
   font-size: 0.67rem;
-  line-height: 12px;
-  line-height: 0.67rem;
+  line-height: 16px;
   text-transform: uppercase;
   color: #eee;
   letter-spacing: .5px;
@@ -483,10 +492,20 @@ body {
 
 #registration {
   color: white;
+  font-weight: 300;
   text-align: center; }
   #registration a {
     text-decoration: none;
-    color: black; }
+    color: #2d3236; }
+  #registration .registration-item {
+    width: 100%; }
+    #registration .registration-item .registration-icon img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 15px;
+      margin-top: 35px; }
 
 #submissions {
-  color: white; }
+  color: white;
+  text-align: center;
+  height: 100%; }

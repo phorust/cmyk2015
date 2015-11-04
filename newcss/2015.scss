@@ -19,6 +19,8 @@ body, html {
   font-family: "Lato";
   font-size: 18px;
   color: #788084;
+
+  font-weight: 300;
 }
 
 h1 {
@@ -71,9 +73,23 @@ body {
     }
   }
   &.registration {
+    #submissions {
+      .content-header {
+        color: #444;
+      }
+      color: #444;
+    }
     background-color: $yellow;
     #sun-spacer #sun-section {
       background-color: $yellow;
+    }
+
+    #registration {
+      font-weight: 400;
+      color: #444;
+      .content-header {
+        color: #444;
+      }
     }
   }
   &.submissions {
@@ -191,8 +207,7 @@ body {
   text-decoration: none;
   font-size: 12px;
   font-size: 0.67rem;
-  line-height: 12px;
-  line-height: 0.67rem;
+  line-height: 16px;
   text-transform: uppercase;
   color: #eee;
   letter-spacing: .5px;
@@ -350,6 +365,7 @@ body {
 }
 #registration {
   color: white;
+  font-weight: 300;
   text-align: center;
   .content-header {
     // background-color: $magenta;
@@ -357,11 +373,29 @@ body {
 
   a {
     text-decoration: none;
-    color: black;
+    color: $k;
+  }
+
+  .registration-item {
+    width: 100%;
+
+    .registration-desc {
+
+    }
+
+    .registration-icon img {
+      width: 100px;
+      height: 100px;
+
+      margin-bottom: 15px;
+      margin-top: 35px;
+    }
   }
 }
 #submissions {
   color: white;
+  text-align: center;
+  height: 100%;
   .content-header {
     // background-color: $k;
   }
